@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btn_home"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#1A1A7C"
+                android:scaleType="fitCenter"
+                android:src="@drawable/minihouse"
+                app:tint="@color/white" />
+
+            <ImageButton
+                android:id="@+id/btn_settings"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#E6713C"
+                android:scaleType="fitCenter"
+                android:src="@drawable/minigear"
+                app:tint="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/settings_group"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_margin="40dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#6C6CB0"
+                    android:textSize="30dp"
+                    android:text="Fan\n4"/>
+                <Button
+                    android:layout_margin="40dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#6C6CB0"
+                    android:padding="10dp"
+                    android:textSize="30dp"
+                    android:text="UV\n30 นาที"/>
+                <Button
+                    android:layout_margin="40dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#6C6CB0"
+                    android:textSize="20dp"
+                    android:text="Nabulizer\n30 นาที" />
+                <ImageButton
+                    android:layout_margin="60dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/up"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_margin="40dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#6C6CB0"
+                    android:textSize="30dp"
+                    android:text="Humid\n65%"/>
+                <Button
+                    android:layout_margin="40dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#6C6CB0"
+                    android:padding="10dp"
+                    android:textSize="25dp"
+                    android:text="CAMERA"/>
+                <Button
+                    android:layout_margin="40dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.2"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="#6C6CB0"
+                    android:textSize="18dp"
+                    android:text="SET REPORT" />
+                <ImageButton
+                    android:layout_margin="60dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.1"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/down"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/home_group"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:padding="0dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.2"
+                    android:fontFamily="sans-serif-black"
+                    android:text="Vet Well Vet PET I.C.U."
+                    android:textColor="@color/white"
+                    android:paddingLeft="320dp"
+                    android:background="#3343B2"
+                    android:textSize="25dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:padding="0dp"
+                    android:background="@drawable/my_custom_background"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:padding="0dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="72dp"
+                            android:layout_weight="0.5"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingLeft="50dp"
+                            android:paddingTop="20dp"
+                            android:text="Temperature"
+                            android:textSize="30dp" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.2"
+                            android:text="[25 °C]"
+                            android:textSize="20dp" />
+                        <Button
+                            android:id="@+id/btnDegreeUnit"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.15"
+                            android:text="[C]/F" />
+                        <ImageButton
+                            android:id="@+id/btnTempSettings"
+                            android:layout_marginTop="20dp"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/settings"/>
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="72dp"
+                            android:layout_weight="0.1"
+                            android:text=""/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:padding="0dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:id="@+id/txtTempValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingLeft="120dp"
+                            android:text="36 °C"
+                            android:textColor="#FF0000"
+                            android:textSize="100dp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:padding="0dp"
+                    android:background="@drawable/my_custom_background"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:padding="0dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.02"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="20dp"
+                            android:text="O2"
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/txtOxygenValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingLeft="120dp"
+                            android:text="36 %"
+                            android:layout_weight="0.9"
+                            android:textColor="#1F8B02"
+                            android:textSize="60dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/lightTurn"
+                                android:layout_width="0dp"
+                                android:layout_height="80dp"
+                                android:layout_weight="0.3"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingLeft="20dp"
+                                android:paddingTop="20dp"
+                                android:text="CO2"
+                                android:textSize="30dp" />
+                            <TextView
+                                android:id="@+id/txtCabonValue"
+                                android:layout_width="0dp"
+                                android:layout_height="100dp"
+                                android:paddingTop="30dp"
+                                android:fontFamily="sans-serif-black"
+                                android:text="2500 ppm"
+                                android:layout_weight="0.7"
+                                android:textColor="#1F8B02"
+                                android:textSize="35dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="0dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.4"
+                    android:padding="0dp"
+                    android:background="@drawable/my_custom_background"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:padding="0dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="72dp"
+                            android:layout_weight="0.6"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingLeft="50dp"
+                            android:paddingTop="20dp"
+                            android:text="Light"
+                            android:textSize="30dp" />
+                        <Button
+                            android:id="@+id/btnTurn"
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.1"
+                            android:text="Off" />
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="50dp"
+                            android:layout_weight="0.1"
+                            android:text="" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3"
+                        android:padding="0dp"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="0dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="20dp"
+                                android:text="Warm"
+                                android:textSize="23dp" />
+                            <androidx.appcompat.widget.AppCompatSeekBar
+                                android:id="@+id/sliderWarm"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:foregroundTint="@color/black"
+                                android:layout_weight="0.5" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:text=""/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:padding="0dp"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.3"
+                                android:fontFamily="sans-serif-black"
+                                android:paddingLeft="50dp"
+                                android:paddingTop="20dp"
+                                android:text="White"
+                                android:textSize="23dp" />
+                            <androidx.appcompat.widget.AppCompatSeekBar
+                                android:id="@+id/sliderWhite"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:foregroundTint="@color/black"
+                                android:layout_weight="0.5" />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.2"
+                                android:text=""/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6"
+                    android:padding="0dp"
+                    android:background="@drawable/my_custom_background"
+
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:padding="0dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.1"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingLeft="20dp"
+                            android:paddingTop="20dp"
+                            android:text="Humidity"
+                            android:textSize="30dp" />
+                        <TextView
+                            android:id="@+id/humidityValue"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingTop="20dp"
+                            android:paddingLeft="120dp"
+                            android:text="55 %"
+                            android:layout_weight="0.9"
+                            android:textColor="#3D449F"
+                            android:textSize="80dp" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="0dp"
+                            android:orientation="horizontal"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_weight="0.1"
+                android:background="#FAB190"
+                android:orientation="horizontal">
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:text="UV AirFlow" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:text="Anion" />
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_margin="5dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.1"
+                    android:textColor="@color/black"
+                    android:backgroundTint="@color/white"
+                    android:text="Nebulizer" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="20dp"
+                    android:textSize="30dp"
+                    android:text="Time ON "/>
+                <TextView
+                    android:id="@+id/txtTimeValue"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:textColor="#FF0000"
+                    android:textSize="30dp"
+                    android:text="01:37:00"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
